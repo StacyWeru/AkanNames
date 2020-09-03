@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Grandstander:wght@600&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
        <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="./css/styles.css" rel="stylesheet" type="text/css">
+    <script src="./js/jquery-3.5.1.js"></script>
 </head>
 
 <body>
@@ -44,7 +45,7 @@
     </div>
 
     <div class="conatiner" class="form">
-      <form style="text-align: center">
+      <form style="text-align: center" onsubmit="return output()">
           <h3 style="text-align: center;">Please Fill in The Required Spaces</h3>
              <div class="form-group">
                 <label for="date" > Date</label>
@@ -67,10 +68,15 @@
               </select>
          </div>
            <div class="form-group">
-               <button type="submit" class="btn btn-primary" onclick="output()">Submit</button>
+               <button type="submit" value="Submit"  class="btn btn-primary" id="output" onclick="output()">Submit</button>
            </div>
+          
+      </form>
+      <div class="footer">
+          <footer></footer>
+      </div>
         
-    </form>
+    
 </div>
 </div>
 
