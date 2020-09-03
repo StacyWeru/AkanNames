@@ -50,3 +50,12 @@ img{
 h3{
     font-family: 'Grandstander', cursive;
 }
+.container .form form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgb(0,0,0.3);
+    width: 700px;
+    background-color: rgba(243, 211, 124, 0.952);
+}
