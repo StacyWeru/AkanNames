@@ -1,3 +1,10 @@
+ 
+$(document).ready(function () {
+    $('.form').submit(function (e) {
+      e.preventDefault();
+      });
+    });
+
 function output() {
 
     var dd = parseInt(document.getElementById("date").value);
@@ -15,9 +22,9 @@ function output() {
     var akanDay = days[Math.floor(day)];
 
 
-    if (mm <1 || mm > 12 || mm == 2 && dd > 29){
+    if (  mm == "" || mm <1 || mm > 12 || mm == 2 && dd > 29){
         alert("INVALID MONTH");
-    } else if ( dd < 1 || dd > 31){
+    } else if (  dd == "" || dd < 1 || dd > 31){
         alert( "INVALID DAY");
     } else if ( yy == ""|| yy.length < 4 || yy.length > 4){
         alert( "INVALID YEAR");
@@ -58,4 +65,6 @@ function output() {
             document.getElementById("output").innerHTML = alert("Born on Sunday ,Your Akan Name is" + female[6]);
         } 
     }
+    
 
+      
