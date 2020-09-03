@@ -1,5 +1,10 @@
+html{
+    background-color: coral;
+}
 h1{
     text-align: center;
+    font-family: 'Grandstander', cursive;
+    font-size: 80px;
 }
 .galleryContainer{
     width: 100%;
@@ -21,4 +26,19 @@ img{
     display: inline-flex;
     justify-content: space-between;
 
+}
+.container-fluid .information{
+    padding: 10px;
+    margin-top: 20px;
+
+}
+.information h3{
+    font-family: 'Grandstander', cursive;
+    text-decoration: underline;
+    color: brown;
+}
+.information p{
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    color: blue;
 }
